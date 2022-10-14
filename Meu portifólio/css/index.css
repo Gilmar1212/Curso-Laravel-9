@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.modal-loading{
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    min-height:990px;
+    background-color:slategrey;
+}
+.modal-loading h2{
+    color:white;
+}
+.loading{
+    margin-right:10px;
+    background-color: floralwhite;
+    width:50px;
+    height:50px;
+    border-radius: 30%;
+}
+.removeModal{
+    opacity:0;
+    transition:0.5s;
+    position:absolute;
+    z-index: -1;
+}
+.rotacao{
+    animation:load 0.5s linear infinite ;
+}
+#Menu{
+    position: absolute;
+    background-color:lightskyblue;
+    width:100%;
+    height:100px;
+    box-shadow: 1px 1px 3px black;
+}
+#Menu img{
+    margin-left:-50px;
+    width:205px;
+    height:95px;
+}
+@keyframes load {
+    to{
+        transform: rotate(360deg);
+    }
+}    
+    
